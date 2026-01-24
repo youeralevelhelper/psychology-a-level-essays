@@ -64,6 +64,7 @@ footer {
   font-weight: 600;
 }
 
+
 .peel {
   list-style: none;     
   padding-left: 0;      
@@ -86,6 +87,7 @@ h3 {
   border-radius: 6px;
 }
 
+
 .button-grid {
   display: flex;
   flex-direction: column;
@@ -94,25 +96,23 @@ h3 {
 }
 
 .topic-btn {
-  display: inline-block;
+  display: block;
   width: 100%;
   max-width: 360px;
   padding: 0.85rem 1.4rem;
   background-color: #f3f3f3;
   color: #222;
-  border: 2px solid #888;
   border-radius: 6px;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .topic-btn:hover {
   background-color: #e0e0e0;
-  transform: translateY(-2px);
 }
+
 
 .about {
   max-width: 700px;
@@ -144,5 +144,7 @@ h3 {
 .paper-section[open] summary {
   margin-bottom: 1rem;
 }
+
+
 
 
