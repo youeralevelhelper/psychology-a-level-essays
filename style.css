@@ -1,149 +1,144 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-:root {
-  --bg-page: #ffffff;
-  --text-main: #222222;
-  --text-secondary: #555555;
-  --border-light: #e0e0e0;
-  --border-hover: #cfcfcf;
-  --box-bg: #fafafa;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Inter", Arial, sans-serif;
-  background-color: var(--bg-page);
-  color: var(--text-main);
-  line-height: 1.65;
-  font-size: 16px;
+  font-family: system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.7;
 }
-
 
 header {
-  background: #ffffff;
-  padding: 1.6rem 1.5rem;
-  text-align: left;
-  border-bottom: 1px solid var(--border-light);
-}
-
-header h1 {
-  font-size: 1.9rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-nav {
-  margin-top: 0.75rem;
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 nav a {
-  margin-right: 1rem;
+  margin: 0 0.75rem;
   text-decoration: none;
-  color: var(--text-secondary);
-  font-weight: 500;
-  font-size: 0.95rem;
+  color: #444;
 }
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 
 main {
-  max-width: 900px;
-  margin: 2.8rem auto;
+  max-width: 800px;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1.5rem;
+  border-top: 1px solid #ddd;
+}
 
-h2 {
-  font-size: 1.45rem;
+.intro-section {
+  margin-top: 2.5rem;
+}
+
+.intro-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column; /* THIS is the key line */
+  gap: 0.5rem;
+}
+
+.level-title {
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin-top: 1.6rem;
-  margin-bottom: 0.7rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-ul {
-  margin-left: 1.2rem;
-}
-
-
-.topic-btn {
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  padding: 0.8rem 1.25rem;
-  margin: 0.6rem auto;   /* <-- centers the button */
-  background-color: #ffffff;
-  color: var(--text-main);
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
-  text-align: center;    /* <-- centers text */
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s ease, border 0.2s ease;
-}
-
-.topic-btn:hover {
-  background-color: #f5f5f5;
-  border-color: var(--border-hover);
 }
 
 
 .peel {
-  list-style: none;
-  padding: 1rem;
-  margin-top: 1rem;
-  background: var(--box-bg);
-  border-left: 4px solid #333333;
+  list-style: none;     
+  padding-left: 0;      
 }
 
 .peel li {
   margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
+h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.peel {
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #ccc;
+  border-radius: 6px;
+}
+
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topic-btn {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 0.85rem 1.4rem;
+  background-color: #f3f3f3;
+  color: #222;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+.topic-btn:hover {
+  background-color: #e0e0e0;
+}
+
+
+.about {
+  max-width: 700px;
+  margin: 3rem auto;
+}
+
+.about p {
+  margin-bottom: 1.2rem;
+}
 
 .paper-section {
   margin-top: 2rem;
-  padding: 1.25rem;
-  background: var(--box-bg);
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
 }
 
 .paper-section summary {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 0.7rem 1rem;
-  background: #f4f4f4;
-  border-radius: 3px;
+  padding: 0.75rem 1rem;
+  background: #f2f2f2;
+  border-radius: 6px;
+  list-style: none;
 }
 
 .paper-section summary:hover {
-  background: #e8e8e8;
+  background: #e6e6e6;
 }
 
 .paper-section[open] summary {
@@ -151,22 +146,4 @@ ul {
 }
 
 
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  padding: 1.3rem 0;
-  border-top: 1px solid var(--border-light);
-  margin-top: 2.5rem;
-}
 
-
-@media (max-width: 650px) {
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  .topic-btn {
-    max-width: 100%;
-  }
-}
